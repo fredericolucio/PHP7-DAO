@@ -2,11 +2,10 @@
 
 require_once("config.php");
 
-$sql = new Sql();
+$clarice = new Usuario();
 
-$usuarios = $sql->select("SELECT * FROM tb_usuarios");
+$clarice->loadbyId(2);
 
-echo json_encode($usuarios);
-
+echo $clarice;
 
 ?>
