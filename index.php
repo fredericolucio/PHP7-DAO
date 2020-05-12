@@ -21,12 +21,15 @@ require_once("config.php");
 //$usuario->login("Mariana","123456");
 //echo $usuario;
 
-//usando procedimento de inclusão com metodo insert
+/*usando procedimento de inclusão com metodo insert
 $aluno = new Usuario("katia", "k@tia");
-
-
 $aluno->insert();
+echo $aluno; */
 
-echo $aluno;
+//testando o método update
+$usuario = new Usuario();
+$usuario->loadById(6);
+$usuario->update("Manu","minhalinda");
+echo $usuario;
 
 ?>
