@@ -26,10 +26,16 @@ $aluno = new Usuario("katia", "k@tia");
 $aluno->insert();
 echo $aluno; */
 
-//testando o método update
+/*testando o método update
 $usuario = new Usuario();
 $usuario->loadById(6);
 $usuario->update("Manu","minhalinda");
+echo $usuario; */
+
+//Testando método delete()
+$usuario = new Usuario();
+$usuario->loadById(8);
+$usuario->delete();
 echo $usuario;
 
 ?>
